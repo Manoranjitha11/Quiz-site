@@ -1,0 +1,57 @@
+h3{
+     line-height: 106px;
+     font-size: 2rem;
+     letter-spacing: 3px;
+}
+ .paginations{
+     float: right;
+}
+ h1{
+     text-align: center;
+}
+ h2{
+     font-size: 1.8rem;
+     letter-spacing: 2px;
+     line-height: 4rem;
+     font-weight: 800;
+}
+ .control{
+     display : grid;
+}
+ .checkbox{
+     padding: 5px;
+}
+ #answer{
+     font-weight: 900;
+}
+ .radio{
+     margin-left: 0px !important;
+     padding: 5px;
+}
+ #correctAnswer{
+     color: green;
+     font-weight: 900;
+}
+ #incorrectAnswer{
+     color: red;
+     font-weight: 900;
+}
+ .pagination-previous,.pagination-next{
+     text-decoration: none !important;
+}
+ #question2, #question3, #question4, #question5, #totalMark, .notification {
+     display: none;
+}
+ .answerText{
+     font-size: 1.8rem;
+     letter-spacing: 2px;
+     line-height: 4rem;
+}
+ #restartButton{
+     text-align: center;
+     padding : 13px;
+}
+ #totalMark{
+     text-align: center;
+}
+ 

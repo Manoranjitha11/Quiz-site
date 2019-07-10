@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Quiz</title>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+   </head>
+   <body>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script src="script.js"></script>
+      <div class="container">
+      <section class="section">
+         <div class="container">
+            <h1 class="title">QUIZ</h1>
+         </div>
+      </section>
+   </body>
+   <div class="notification">
+      <div id="question1">
+         <h3>Select only animals</h3>
+         <div class="control">
+            <label class="checkbox"><input type="checkbox" value="bear" name="animal"> Grizzly bear</label>
+            <label class="checkbox"><input type="checkbox" value="loon" name="animal"> Common Loon</label>
+            <label class="checkbox"><input type="checkbox" value="wolf" name="animal"> Gray wolf</label>
+            <label class="checkbox"><input type="checkbox" value="wolverine" name="animal"> Wolverine</label>
+            <label class="checkbox"><input type="checkbox" value="owl" name="animal"> Snowy Owl</label>
+            <label class="checkbox"><input type="checkbox" value="chickadee" name="animal"> Chickadee</label>
+            <br>
+         </div>
+         <div class="paginations">
+            <button class="pagination-previous" id="getAnswer1" >Check</button>
+            <!-- <button id="next1" class="pagination-next" title="Disabled button">Disabled</button> -->
+            <button class="pagination-next" id="next1" disabled>Next page</button>
+            <br> <br>
+         </div>
+      </div>
+      <div id="question2">
+         <h3>What is the capital of India ? </h3>
+         <div class="control"> 
+            <label class="radio">
+            <input type="radio" name="capital" value="delhi"> New Delhi</label> 
+            <label class="radio"><input type="radio" name="capital" value="chennai"> Chennai</label>
+            <label class="radio"><input type="radio" name="capital" value="bangalore"> Bangalore</label>
+            <br> <br>
+         </div>
+         <div class="paginations">
+            <button class="pagination-previous" id="getAnswer2">Check</button>
+            <button class="pagination-next" id="next2">Next page</button>
+            <br> <br>
+         </div>
+      </div>
+      <div id="question3">
+         <h3>What is 2 + 2 ?</h3>
+         <div class="control"> 
+            <label class="radio"><input type="radio" name="add" value="4"> 4</label> 
+            <label class="radio"><input type="radio" name="add" value="10"> 10</label>
+            <label class="radio"><input type="radio" name="add" value="20"> 20</label>
+            <br> <br>
+         </div>
+         <div class="paginations">
+            <button class="pagination-previous" id="getAnswer3" >Check</button>
+            <button class="pagination-next" id="next3">Next page</button>
+            <br> <br>
+         </div>
+      </div>
+      <div id="question4">
+         <h3>Who is the father of computer ? </h3>
+         <div class="control"> 
+            <label class="radio"><input type="radio" name="computer" value="charles"> Charles babbage</label> 
+            <label class="radio"><input type="radio" name="computer" value="john"> John van neumann</label>
+            <label class="radio"><input type="radio" name="computer" value="herman"> Herman hollerith</label>
+            <br> <br>
+         </div>
+         <div class="paginations">
+            <button class="pagination-previous"id="getAnswer4" >Check</button>
+            <button class="pagination-next" id="next4">Next page</button>
+            <br> <br>
+         </div>
+      </div>
+      <div id="question5">
+         <h3>Is Toronto the capital of Ontario ? </h3>
+         <div class="control"> 
+            <label class="radio"><input type="radio" name="truefalse" value="true"> True</label> 
+            <label class="radio"><input type="radio" name="truefalse" value="false"> False</label>
+            <br> <br>
+         </div>
+         <div class="paginations">
+            <button class="pagination-previous" id="getAnswer5" >Check</button>
+            <button class="pagination-next" id="submit">Submit</button>
+            <br> <br>
+         </div>
+      </div>
+      <div id="answer"></div>
+      <div id="totalMark">
+         <h2> Results </h2>
+         <p class="answerText"> <span id="correctAnswerCount">0</span> out of 5
+         <p class="answerText">Correct Answer : <span id="correctAnswer">0</span></p>
+         <p class="answerText">Incorrect Answer : <span id="incorrectAnswer">0</span></p>
+         <div id="restartButton">
+            <button class="button is-outlined" id="restart">Restart</button>
+         </div>
+      </div>
+      <div>
+         <progress id="progress" class="progress is-primary" value="20" max="100">15%</progress>
+      </div>
+   </div>
+   </body>
+</html>
